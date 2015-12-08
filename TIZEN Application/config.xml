@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/TeamThreeProject" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="bscCeAyDtq.TeamThreeProject" package="bscCeAyDtq" required_version="2.3"/>
+    <content src="index.html"/>
+    <tizen:content-security-policy>access</tizen:content-security-policy>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="images/chair.png"/>
+    <name>TeamThreeProject</name>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:profile name="mobile"/>
+</widget>

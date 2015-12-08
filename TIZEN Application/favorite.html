@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>TeamThreeProject</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="assets/css/bootstrap.css" media="screen">
+<link rel="stylesheet" href="assets/css/custom.min.css">
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="main.html" class="navbar-brand">CafeSeatsApplication</a>
+				<button class="navbar-toggle" type="button" data-toggle="collapse"
+					data-target="#navbar-main">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+					<li class="divider"></li>
+					<li><a href="main.html">Main</a></li>
+					<li><a href="favorite.html" class="current-page-item">Favorite
+							cafes</a></li>
+					<li><a href="board.html">Board</a></li>
+					<li class="divider"></li>
+					<li><a href="settings.html">Settings</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="main">
+		<div class="container">
+			<div class="bs-docs-section">
+				<div class="row">
+					<div class="col-lg-6">
+
+						<div class="alert alert-dismissible alert-danger">
+							<button type="button" class="close" data-dismiss="alert">x</button>
+							최대 <strong>10개</strong>까지 등록할 수 있습니다.
+						</div>
+						<div class="well bs-component">
+							<legend>Cafe lists</legend>
+							<div id="favoritelist">
+								<!-- favorite_json.js 참고 -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="row">
+			<div class="col-lg-12" align="center">
+				<p>&copy; Untitled. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- Scripts -->
+	<script src="lib/tau/mobile/js/jquery.js"></script>
+	<script src="lib/tau/mobile/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/main_cafejson.js"></script>
+	<script src="assets/js/favorite_json.js"></script>
+</body>
+</html>

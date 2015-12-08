@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#call").click(function() {
+			var str = $("#form1").serialize();
+			alert(str);
+
+			$.ajax({
+				type:"POST",
+				url:"http://localhost:8080/Team3Server/team3?cmd=login",
+				contentType: "application/x-www-form-urlencoded; charset=utf-8",
+				data: str,
+				datatype:"json",
+				success: function(data) {
+					window.location.replace('file:///Users/jongchan/Documents/workspace/Team3Server/WebContent/WEB-INF/test/test2.html')		
+				},
+				error: function(e) {
+					alert("에러발생");
+				}			
+			});
+		});
+	});
+</script>
+
+</head>
+<body>
+<form id="form1">
+	<input type="text" name="email" value="" id="email"></input>
+	<input type="text" name="passwd" value="" id="passwd"></input>
+	<input type="button" value="호출" id="call"></input>
+</form>
+
+</body>
+</html>
